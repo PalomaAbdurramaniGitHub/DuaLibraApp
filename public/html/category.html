@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="../css/category.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Choose category</h1>
+        <p >Select at least one category</p>
+        <div id="book-categories">
+            <div  class="box">
+                <img src="../images/fi-sr-heart-arrow.png" alt="heart image" class="image">
+                <p class="text">romance</p>
+            </div>
+            <div  class="box">
+                <img src="../images/book-magic-spells-witchcraft 1.png" alt="book image" class="image">
+                <p class="text">academic</p>
+            </div>
+            <div  class="box">
+                <img src="../images/15737 3.png" alt="pen image" class="image">
+                <p class="text">poem</p>
+            </div>
+            <div  class="box">
+                <img src="../images/book-magic-spells-witchcraft 2.png" alt="magic book image" class="image">
+                <p class="text">history</p>
+            </div>
+            <div  class="box">
+                <img src="../images/white-scary-ghost-isolated 1.png" alt="ghost image" class="image">
+                <p class="text">thriller</p>
+            </div>
+            <div  class="box">
+                <img src="../images/mental_health5_generated 1.png" alt="mental health image" class="image">
+                <p class="text">psychology</p>
+            </div>
+            <div  class="box">
+                <img src="../images/vecteezy_illustration-isometric-concept-analysis-of-investment_5647980 1.png" alt="business image" class="image">
+                <p class="text">business</p>
+            </div>
+            <div  class="box">
+                <img src="../images/qv2l_snvp_220819 1.png" alt="penguin image" class="image">
+                <p class="text">kids</p>
+            </div>
+        </div>
+        <div id="button-id">
+            <a href="./home.html" id="button">Submit</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const selectedCategory = document.querySelectorAll(".box");
+            selectedCategory.forEach(category => {
+                category.addEventListener("click", function(){
+                    if(this.classList.contains("selected")){
+                        this.classList.remove("selected");
+                    }else{
+                        this.classList.add("selected");
+                    }
+                })
+            });
+        });
+
+        const token = localStorage.getItem("authToken");
+        if(!token){
+            window.location.href = "logIn.html";
+        }
+    </script>
+</body>
+</html>

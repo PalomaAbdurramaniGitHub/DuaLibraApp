@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link href="../css/book.css" rel="stylesheet">
+</head>
+<body>
+    <div id="top-container">
+        <a href="home.html">
+            <img src="../images/fi-rr-arrow-small-left.png" alt="arrow">
+        </a>
+        <img id="book-cover" src="../images/eskili-ky-humbes-i-madh-ismail-kadare 2.png" alt="book cover">
+    </div>
+    <div id="bottom-container">
+        <div id="book-title">
+            <h3>ESKILI by <br> <span>Ismail Kadare</span></h3>
+            <div id="rating">
+                <p>4.8</p>
+                <img src="../images/star.png" alt="star">
+            </div>
+        </div>
+        <p id="description">
+            Kur në një ditë tetori, në një nga ato ditë të tetorit që duket se janë krijuar enkas për të rilexuar diçka të rrallë, nga rafti i bibliotekës tërheq një libër të Eskilit, ti e kupton menjëherë nëse e ke gjetur ose jo ditën e përshtatshme për këtë gjë.
+        </p>
+        <h3 id="price">700ALL</h3>
+        <p id="discount">Save 30% from normal price!</p>
+        <a href="#" id="button">Buy now</a>
+    </div>
+
+    <script>
+        const token = localStorage.getItem("authToken");
+        if(!token){
+            window.location.href = "logIn.html";
+        }
+    </script>
+</body>
+</html>

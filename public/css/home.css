@@ -1,0 +1,213 @@
+body{
+    margin: 0px;
+    padding: 0;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#duaLibra-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#duaLibra-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(0, 103, 108, 1);
+}
+#search-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(241, 244, 255, 1);
+    border-radius: 28px;
+    height: 53px;
+}
+#search-field input{
+    width: 280px;
+    border: none;
+    background-color: rgba(241, 244, 255, 1);
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    outline: none;
+}
+#search-field input::placeholder{
+    color: rgba(73, 69, 79, 1);
+}
+#search-field img{
+    width: 48px;
+    height: 48px;
+}
+#categories{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category{
+    width: 75px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+}
+.category img{
+    width: 30px;
+    height: 32px;
+    background-color: 
+    rgba(241, 244, 255, 1);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 11px;
+}
+.category p{
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+#quote-image-container{
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 103, 108, 0.2);
+    height: 140px;
+    border-radius: 20px;
+}
+#quote-container{
+    margin-left: 24px;
+}
+#quote-container h2{
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 103, 108, 1);
+}
+#quote-container p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+#top-sellers-title{
+    margin-top: 22px;
+    margin-bottom: 3px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+}
+#top-seller-container{
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+}
+#top-seller-container::-webkit-scrollbar{
+    display: none;
+}
+.carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.carousel-item p{
+    margin-top: 5px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+}
+#suggestions-title{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+}
+#suggestion-container{
+    margin-top: 0;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
+}
+#suggestion-container::-webkit-scrollbar{
+    display: none;
+}
+.suggestion-item{
+    background-color: rgba(241, 244, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+    padding: 20px;
+    text-decoration: none;
+}
+.book{
+    width: 148px;
+    height: 226px;
+}
+.suggestion-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 109px;
+    height: 226px;
+}
+.book-title{
+    margin: 0;
+    padding: 0;
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+.book-title span{
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+}
+.stars{
+    display: flex;
+    margin-top: 16px;
+}
+.book-price{
+    margin: 0;
+    bottom: 0;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    color: 
+    rgba(0, 103, 108, 1);
+}
+.no-decoration{
+    text-decoration: none;
+}
+.save-icon{
+    width: 22px;
+    height: 24px;
+}

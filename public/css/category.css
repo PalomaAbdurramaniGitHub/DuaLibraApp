@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+body h1{
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgba(0, 103, 108, 1);
+}
+body p{
+    margin-top: 3px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 24px;
+}
+#book-categories{
+    margin: 18.5px;
+    margin-top: 37px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 34px;
+}
+#book-categories div{
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.image{
+    height: 4.5rem;
+}
+.text{
+    color: rgba(0, 0, 0, 1);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+}
+.selected{
+    background-color: rgba(241, 244, 255, 1);
+}
+#button-id{
+    margin-top: 45px;
+}
+#button{
+    background-color: rgba(0, 103, 108, 1);
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 123.5px;  
+    padding-right: 123.5px;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    border: 1px solid rgba(44, 44, 44, 1);
+    border-radius: 11px;
+    letter-spacing: 0.5px;
+}
+#button:hover{
+    background-color: rgba(0, 103, 108, 0.847);
+}

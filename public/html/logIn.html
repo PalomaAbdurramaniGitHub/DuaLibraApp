@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="../css/logIn.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="createAccount">Log in to your account</h1>
+        <p id="logIn-option">Dont't have an account? <a href="register.html">Register</a></p>
+        <form id="loginForm">
+            <input type="text" id="loginEmail" placeholder="email">
+            <div id="password-holder">
+                <input type="password" id="loginPassword" placeholder="password">
+                <img id="togglePassword" src="../icons/visible.png">
+            </div>
+            <a href="#" id="forgot-password">Forgot password?</a>
+            <button type="submit" id="button">Continue</button>
+        </form>
+        <div id="signUp-with">
+            <img src="../icons/Frame.svg" alt="frame">
+            <p id="signUp-text">or sign up with</p>
+            <img src="../icons/Frame.svg" alt="frame">
+        </div>
+        <div id="web-icons">
+            <img src="../icons/Group 3.svg" alt="google logo">
+            <img src="../icons/Group.svg" alt="apple logo">
+            <img src="../icons/facebook logo.svg" alt="facebook logo">
+        </div>
+        <p id="terms">By clicking Create new account you agree to Recognise <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        loginForm.addEventListener("submit", async(event) => {
+            event.preventDefault();
+
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            try {
+                const response = await fetch('http://localhost:5500/logIn', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const data = await response.json();
+                if(data.token){
+                    localStorage.setItem("authToken", data.token);
+                    window.location.href = "home.html";
+                }else{
+                    alert(data.message);
+                }
+            }catch(error) {
+                console.error('Error:', error);
+                alert('There was a problem with the login request.');
+            }
+        });
+
+        // password visibility
+        const togglePassword = document.getElementById("togglePassword");
+        const passwordInput = document.getElementById("loginPassword");
+
+        togglePassword.addEventListener("click", function () {
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+            passwordInput.setAttribute("type", type);
+
+            this.src = type === "password" ? "../icons/visible.png" : "../icons/unvisible.png"; 
+        });
+    </script>
+</body>
+</html>

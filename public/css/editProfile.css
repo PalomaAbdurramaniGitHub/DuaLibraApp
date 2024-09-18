@@ -1,0 +1,103 @@
+#addBook-text{
+    margin-top: 25px;
+    margin-left: 19px;
+    display: flex;
+    align-items: center;
+}
+#addBook-text h1{
+    margin-left: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container > img{
+    margin-top: 42px;
+    margin-bottom: 44px;
+    height: 170px;
+    width: 170px;
+}
+#container input{
+    margin-bottom: 24px;
+    width: 379px;
+    height: 58px;
+    border: 1px solid rgba(121, 116, 126, 1);
+    border-radius: 8px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 23px;
+    box-sizing: border-box;
+}
+#container input::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+}
+#container input:focus{ 
+    background-color: rgba(241, 244, 255, 1);
+}
+#button{
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0, 103, 108, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    border: 1px solid rgba(44, 44, 44, 1);
+    border-radius: 11px;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+    width: 379px;
+    padding-top: 15.5px;
+    padding-bottom: 15.5px;
+    margin-bottom: 91px;
+}
+#button:hover{
+    background-color: rgba(0, 103, 108, 0.847);
+}
+#sell-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 103, 108, 0.2);
+    width: 379px;
+    height: 150px;
+    border-radius: 20px;
+}
+#start-selling{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#start-selling h2{
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    color: rgba(0, 103, 108, 1);
+    margin-top: 24px;
+    margin-left: 18px;
+}
+#start-selling a{
+    background-color: rgba(0, 103, 108, 1);
+    border: 1px solid rgba(44, 44, 44, 1);
+    border-radius: 50px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    color: 
+    rgba(255, 255, 255, 1);
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 31px;
+}

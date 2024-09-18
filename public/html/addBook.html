@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="../css/addBook.css" rel="stylesheet">
+</head>
+<body>
+    <div id="addBook-text">
+        <a href="editProfile.html">
+            <img src="../images/fi-rr-arrow-small-left.png" alt="arrow image">
+        </a>
+        <h1>Add new book</h1>
+    </div>
+    <div id="container">
+        <div id="upload-book">
+            <p>Upload book</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title">
+            <input type="text" placeholder="Author Name" id="author-name">
+            <input type="text" placeholder="Category" id="book-category">
+            <input type="text" placeholder="Description" id="book-description">
+            <input type="text" placeholder="Book Price" id="book-price">
+            <input type="text" placeholder="Your Price" id="your-price">
+            <a href="home.html" id="button">Confirm</a>
+        </form>
+    </div>
+
+    <script>
+        const token = localStorage.getItem("authToken");
+        if(!token){
+            window.location.href = "logIn.html";
+        }
+    </script>
+</body>
+</html>

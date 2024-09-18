@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#top-container{
+    position: relative;
+    display: flex;
+    align-items: start;
+    padding-left: 24px;
+    padding-top: 40px;
+}
+#top-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/esk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(0, 0, 0, 1);
+    opacity: 0.3;
+    z-index: -1;
+}
+#book-cover{
+    margin-left: 48px;
+    margin-right: 104px;
+    margin-top: 14px;
+    margin-bottom: 35px;
+}
+#bottom-container{
+    margin-right: 24px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+#book-title{
+    display: flex;
+    height: 86px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgba(0, 103, 108, 1);
+    margin-top: 23px;
+}
+#book-title span{
+    font-weight: 500;
+    font-style: italic;
+}
+#rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+#rating p{
+    padding-bottom: 7px;
+}
+#description{
+    margin-top: 21px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+#price{
+    margin-top: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(0, 103, 108, 1);
+    margin-bottom: 0;
+}
+#discount{
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 1);
+}
+#button{
+    width: 352px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0, 103, 108, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid rgba(44, 44, 44, 1);
+    border-radius: 11px;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+}
+#button:hover{
+    background-color: rgba(0, 103, 108, 0.847);
+}
